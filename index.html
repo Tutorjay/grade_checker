@@ -12,7 +12,7 @@
 
 <body>
     <div class="col-lg-2 col-6 col-md-3 my-5 my-lg-5 mx-auto">
-        <img class="items-center" src="./ca-logo-reversed.svg" width="150" alt="">
+        <img class="items-center my-5" src="./ca-logo-reversed.svg" width="150" alt="">
     </div>
     <div id="box" class="col-lg-6 col-12 col-md-8 shadow mx-auto border  border-3 rounded-5 mt-5 bg-white">
         <div>
@@ -35,7 +35,7 @@
 
         function totalScore() {
             if (totalQuestion.value == '') {
-                answer.innerHTML = 'type a number btw 0-100'
+                answer.innerHTML = 'Type a number btw 0-100'
             } else {
                 var userNumber = Number(totalQuestion.value)
                 if (userNumber >= 0 && userNumber < 40) {
@@ -75,7 +75,7 @@
                     songExcel.play()
 
                 } else {
-                    answer.innerHTML = 'type less than 100'
+                    answer.innerHTML = 'Type a valid number between 0-100'
                     var songNo = new Audio("Wrong-Answer.mp3")
                     songNo.play()
                 }
